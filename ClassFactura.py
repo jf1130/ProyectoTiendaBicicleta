@@ -1,3 +1,6 @@
+import csv
+from ClassCarrito import Infoventa
+
 class   Factura:
     # CodFactura: str
     # Nit: str
@@ -5,6 +8,8 @@ class   Factura:
     def __init__(self, CodFactura:str, Nit: str):
      self.CodFactura=CodFactura
      self.Nit=Nit
+     
+     self.InfoVenta
 
     def GetCodFactura(self):
         return self.CodFactura
@@ -18,4 +23,7 @@ class   Factura:
     def SetNit(self, Nit):
         self.Nit = Nit
 
-objFactura= Factura()
+    def DetalleVenta(self):
+        print(self.CodFactura)
+
+objFactura= Factura("S32345","4233F")

@@ -1,3 +1,4 @@
+import csv
 class   Proveedor:
     # Nombre: str
     # Code: str
@@ -5,7 +6,7 @@ class   Proveedor:
     # Email: str
     # Direccion: str 
 
-    def __init__(self, Nombre:int, Code:str, Telefono: str, Email: str, Direccion: str):
+    def __init__(self, Nombre:str, Code:str, Telefono: int, Email: str, Direccion: str):
      self.Nombre=Nombre
      self.Code
      self.Telefono=Telefono
@@ -42,4 +43,7 @@ class   Proveedor:
     def SetDireccion(self, Direccion):
         self.Direccion = Direccion
 
-objProveedor= Proveedor()
+    def ContactarProveedor(self):
+        print(self)
+
+objProveedor= Proveedor("specialized","3288G",3222435678,"specilized@gmaio.com","carrera 33 #25-33")

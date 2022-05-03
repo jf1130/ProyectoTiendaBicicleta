@@ -1,16 +1,20 @@
+from pickle import TRUE
+import csv
+
 class   Producto:
     # Nombre: str
     # CodSerie: str
     # Precio: float
     # Marca: str
     # EnStock: bool 
+    # Proveedor: Proveedor
 
     def __init__(self, Nombre:str, CodSerie:str, Precio: float, Marca: str, EnStock: bool):
-     self.Nombre=Nombre
-     self.CodSerie=CodSerie
-     self.Precio=Precio
-     self.Marca=Marca
-     self.EnStock=EnStock
+        self.Nombre=Nombre
+        self.CodSerie=CodSerie
+        self.Precio=Precio
+        self.Marca=Marca
+        self.EnStock=EnStock
 
     def GetNombre(self):
         return self.Nombre
@@ -29,5 +33,11 @@ class   Producto:
     
     def SetMarca(self, Marca):
         self.Marca = Marca
+    
+    def ListarProducto(self):
+        print(self.ListarProducto)
+    
+    def BuscarProducto(self):
+        print(self.BuscarProducto)
 
-objProducto= Producto()
+objProducto= Producto("BICICLETA","3022G",3.700,"YT",TRUE )

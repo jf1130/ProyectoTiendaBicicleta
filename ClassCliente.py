@@ -1,3 +1,5 @@
+import csv
+from ClassPago import Pago
 class   Cliente:
     # Nombre:str
     # Aperllido:str
@@ -5,7 +7,8 @@ class   Cliente:
     # Telefono: int
     # Email: str
     # Direccion: str
-    # NumContacto:str    
+    # NumContacto:str
+    # PagoCliente= Pago    
 
     def __init__(self, Nombre:str,Apellido:str, Dni:str, Telefono: int, Email: str, Direccion: str, NumContacto:str):
      self.Nombre=Nombre
@@ -14,6 +17,11 @@ class   Cliente:
      self.Telefono=Telefono
      self.Email=Email
      self.Direccion=Direccion
+     
+     self.PagoCliente= Pago ("Carlos","Martinez","df3459",3214356756,"cr@gmail.com","cra 34 # 33_12","camila-324534444")
+
+    def Registrar(Nombre:str,Apellido:str, Dni:str, Telefono: int, Email: str, Direccion: str, NumContacto:str):str
+    def Actualizar(Nombre:str,Apellido:str, Dni:str, Telefono: int, Email: str, Direccion: str, NumContacto:str):str
 
     def GetNombre(self):
         return self.Nombre
@@ -57,4 +65,6 @@ class   Cliente:
     def SetNumContacto(self,NumContacto):
         self.NumContacto = NumContacto
 
-objCliente= Cliente()    
+    
+
+objCliente= Cliente("camilo","ramirez","325789-f",3213456754,"camilor56455@gmial.com","Carrera 70# 67-44","3213456754")
