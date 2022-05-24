@@ -1,7 +1,4 @@
-from TipoTela import EnumTipoTela
-from TipoEquipamento import EnumTipoEquipamento
-from Talla import EnumTalla
-from Equipamento import Producto
+
 
 class Equipamento(Producto):
     

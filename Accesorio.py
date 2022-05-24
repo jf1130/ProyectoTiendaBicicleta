@@ -1,5 +1,5 @@
 from pickle import TRUE
-from Color import Enum
+
 from Producto import Producto
 
 class Accesorio(Producto):
@@ -8,7 +8,7 @@ class Accesorio(Producto):
     def __init__(self, Nombre:str, CodSerie:str, Precio: float, Marca: str, EnStock: bool,TamanioRin:float):
         Producto.__init__(self, Nombre, CodSerie , Precio , Marca , EnStock)
         self.TamanioRin=TamanioRin
-    
+        
             
     
     def GetTamanioRin(self):
