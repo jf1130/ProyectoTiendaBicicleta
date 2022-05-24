@@ -1,4 +1,5 @@
 import csv
+from unittest import result
 class   Proveedor:
     # Nombre: str
     # Code: str
@@ -8,7 +9,7 @@ class   Proveedor:
 
     def __init__(self, Nombre:str, Code:str, Telefono: int, Email: str, Direccion: str):
      self.Nombre=Nombre
-     self.Code
+     self.Code=Code
      self.Telefono=Telefono
      self.Email=Email
      self.Direccion=Direccion
@@ -45,5 +46,9 @@ class   Proveedor:
 
     def ContactarProveedor(self):
         print(self)
+    
+    def __str__(self):
+        result = f"Nombre del proveedor: {str(self.Nombre)}\nCode: {str(self.Code)}\nTelefono: {str(self.Telefono)}\nEmail: {str(self.Email)}\n Direccion: {str(self.Direccion)}"
 
-objProveedor= Proveedor("specialized","3288G",3222435678,"specilized@gmaio.com","carrera 33 #25-33")
+objProveedor = Proveedor("specialized","3288G",3222435678,"specilized@gmail.com","carrera 33 #25-33")
+print(objProveedor)
