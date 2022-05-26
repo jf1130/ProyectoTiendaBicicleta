@@ -64,7 +64,10 @@ class   Cliente:
     
     def SetNumContacto(self,NumContacto):
         self.NumContacto = NumContacto
-
     
+    def __str__(self):
+        result = f" Cliente: {str(self.Nombre)}\nApellido: {str(self.Apellido)}\nDni: {float(self.Dni)}\nTelefono: {str(self.Telefono)}\nDireccion: {str(self.Direccion)}\nEmail: {str(self.Email)}\nNumContacto: {str(self.NumContacto)}\nPagoCliente: {str(self.PagoCliente)}"
+        return result
 
 objCliente= Cliente("camilo","ramirez","325789-f",3213456754,"camilor56455@gmial.com","Carrera 70# 67-44","3213456754")
+
