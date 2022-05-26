@@ -44,6 +44,8 @@ class   Pago:
     
     def Pagar(self):
         print(self)
+
+    
         
 objPago= Pago("1130F",1.600,True, Alerta.GetAlertaPago())
     
