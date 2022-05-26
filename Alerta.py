@@ -18,4 +18,8 @@ def EnviarCodConfirmacion(self):
 def AlertaPago(self):
        print(self)
 
+def __str__(self):
+        result = f"alerta: {str(self.AletaPago)}"
+        return result
+
 objAlerta= Alerta("Si se confirma el pedido")
