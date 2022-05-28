@@ -21,7 +21,8 @@ class Accesorio(Producto):
     def __str__(self):
         result = f"Nombre del Accesorio: {str(self.Nombre)}\nCodSerie: {str(self.CodSerie)}\nPrecio: {float(self.Precio)}\nMarca: {str(self.Marca)}\nEnstock: {str(self.EnStock)}\nColor: {str(self.Color.value)}"
         return result
-objAccesorio= Accesorio("Bici","A12A",3600,"GADO",True,27.5,EnumColor.Dorado)
-print(objAccesorio)
+
+# objAccesorio= Accesorio("Bici","A12A",3600,"GADO",True,27.5,EnumColor.Dorado)
+# print(objAccesorio.__str__())
 
 

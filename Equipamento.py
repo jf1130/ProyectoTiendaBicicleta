@@ -32,6 +32,6 @@ class Equipamento(Producto):
     def __str__(self):
         result = f"Nombre Del Equipamento: {str(self.Nombre)}\nCodSerie:{str(self.CodSerie)}\nPrecio:{float(self.Precio)}\nMarca:{str(self.Marca)}\nEnStock:{str(self.EnStock)}\nTalla:{str(self.Talla.value)}\nTipoTela:{str(self.TipoTela.value)}\nTipoEquipamneto:{str(self.TipoEquipamento.value)}"
         return result
-objEquipamento= Equipamento("Bici","B420","50.000","Llanero",True,EnumTalla.L,EnumTipoTela.Thermoflex,EnumTipoEquipamento.DownHill)
-print(objEquipamento)
+# objEquipamento= Equipamento("Bici","B420","50.000","Llanero",True,EnumTalla.L,EnumTipoTela.Thermoflex,EnumTipoEquipamento.DownHill)
+# print(objEquipamento.__str__())
 

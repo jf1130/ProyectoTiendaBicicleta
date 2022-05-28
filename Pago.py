@@ -1,5 +1,5 @@
+from typing import Any
 from Alerta import Alerta
-from MetodoPago import Enum
 
 class   Pago:
     # NumeroCuenta: str
@@ -45,8 +45,10 @@ class   Pago:
     def Pagar(self):
         print(self)
 
-    
-        
-objPago= Pago("1130F",1.600,True, Alerta.GetAlertaPago())
-    
+    def __str__(self) -> str:
+        return f"Num Cuenta {str(self.NumeroCuenta)}\nValor: {str(self.Valor)}\nEstado: {str(self.Estado)}\nCodigo confirmación: {str(self.CodConfirmacion)}"
+
+
+# objPago= Pago("1130F",1.600, True, Any)
+# print(objPago.__str__())
 

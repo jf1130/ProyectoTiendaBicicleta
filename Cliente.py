@@ -11,16 +11,17 @@ class   Cliente:
     # PagoCliente= Pago    
 
     def __init__(self, Nombre:str,Apellido:str, Dni:str, Telefono: int, Email: str, Direccion: str, NumContacto:str):
-     self.Nombre=Nombre
-     self.Apellido= Apellido
-     self.Dni=Dni
-     self.Telefono=Telefono
-     self.Email=Email
-     self.Direccion=Direccion
-     
-     self.PagoCliente= Pago ("Carlos","Martinez","df3459",3214356756,"cr@gmail.com","cra 34 # 33_12","camila-324534444")
+        self.Nombre=Nombre
+        self.Apellido= Apellido
+        self.Dni=Dni
+        self.Telefono=Telefono
+        self.Email=Email
+        self.Direccion=Direccion     
+        self.NumContacto=NumContacto
+        self.PagoCliente= Pago("1130F",1.600, True, any)
 
     def Registrar(Nombre:str,Apellido:str, Dni:str, Telefono: int, Email: str, Direccion: str, NumContacto:str):str
+    
     def Actualizar(Nombre:str,Apellido:str, Dni:str, Telefono: int, Email: str, Direccion: str, NumContacto:str):str
 
     def GetNombre(self):
@@ -66,8 +67,8 @@ class   Cliente:
         self.NumContacto = NumContacto
     
     def __str__(self):
-        result = f" Cliente: {str(self.Nombre)}\nApellido: {str(self.Apellido)}\nDni: {float(self.Dni)}\nTelefono: {str(self.Telefono)}\nDireccion: {str(self.Direccion)}\nEmail: {str(self.Email)}\nNumContacto: {str(self.NumContacto)}\nPagoCliente: {str(self.PagoCliente)}"
+        result = f"Cliente: {str(self.Nombre)}\nApellido: {str(self.Apellido)}\nDni: {str(self.Dni)}\nTelefono: {str(self.Telefono)}\nDireccion: {str(self.Direccion)}\nEmail: {str(self.Email)}\nNumContacto: {str(self.NumContacto)}\n\nDatos del pago\n\n{str(self.PagoCliente)}"
         return result
 
-objCliente= Cliente("camilo","ramirez","325789-f",3213456754,"camilor56455@gmial.com","Carrera 70# 67-44","3213456754")
-
+# objCliente= Cliente('Juanito', 'Alimania', 'j4567891', 314558756, 'example@example.com', 'KR 41 # 30-58', "8885541")
+# print(objCliente.__str__())

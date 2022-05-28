@@ -49,6 +49,7 @@ class   Proveedor:
     
     def __str__(self):
         result = f"Nombre del proveedor: {str(self.Nombre)}\nCode: {str(self.Code)}\nTelefono: {str(self.Telefono)}\nEmail: {str(self.Email)}\n Direccion: {str(self.Direccion)}"
+        return result
 
-objProveedor = Proveedor("specialized","3288G",3222435678,"specilized@gmail.com","carrera 33 #25-33")
-print(objProveedor)
+# objProveedor = Proveedor("specialized","3288G",3222435678,"specilized@gmail.com","carrera 33 #25-33")
+# print(objProveedor)

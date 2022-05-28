@@ -40,4 +40,10 @@ class   Producto:
     def BuscarProducto(self):
         print(self.BuscarProducto)
 
-objProducto= Producto("BICICLETA","3022G",3.700,"YT",TRUE )
+    def __str__(self) -> str:
+        result = f'Nombre Producto: {str(self.Nombre)}\nCod Serie: {str(self.CodSerie)}\nPrecio: {self.Precio}\nMarca: {str(self.Marca)}\nStock: {str(self.EnStock)}'
+        return result
+
+# objProducto= Producto("BICICLETA","3022G",3.700,"YT", True)
+# print(objProducto.__str__())
+
